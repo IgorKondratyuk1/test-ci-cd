@@ -19,10 +19,14 @@ describe('AppController (e2e)', () => {
     return request(app.getHttpServer())
       .get('/')
       .expect(200)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       .expect('Hello World!!!');
 =======
       .expect('New Hello World!!!');
 >>>>>>> development
+=======
+      .expect('New Hello World!!!');
+>>>>>>> Stashed changes
   });
 });
