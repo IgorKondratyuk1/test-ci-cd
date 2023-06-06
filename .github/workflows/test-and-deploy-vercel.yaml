@@ -6,6 +6,12 @@ on:
   push:
     branches:
       - production
+  pull_request:
+    types:
+      - closed
+    branches:
+      - production
+
 jobs:
   Tests:
     name: Tests # назва роботи в pipeline
