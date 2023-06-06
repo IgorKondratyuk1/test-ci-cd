@@ -5,7 +5,7 @@ env:
 on:
   push:
     branches:
-      - staging
+      - production
 jobs:
   Tests:
     name: Tests # назва роботи в pipeline
@@ -18,7 +18,7 @@ jobs:
         run: yarn # встановлюємо залежності
 
       - name: Test
-        run: yarn test # запускаємо скрипт тестів
+        run: yarn test:e2e # запускаємо скрипт тестів
 
   Deploy-Preview:
     runs-on: ubuntu-latest
